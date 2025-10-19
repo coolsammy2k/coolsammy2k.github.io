@@ -1,0 +1,161 @@
+/* ===== CYBER DARK THEME ===== */
+
+/* Global Colors */
+:root {
+--cyber-green: #00ff99;
+--cyber-blue: #00e5ff;
+--cyber-bg: #0a0a0a;
+--cyber-panel: #121212;
+--text-light: #f0f0f0;
+--text-muted: #aaaaaa;
+}
+
+/* Body */
+body {
+background: var(--cyber-bg);
+color: var(--text-light);
+font-family: "Poppins", sans-serif;
+line-height: 1.7;
+}
+
+/* Header Sidebar */
+#header {
+background: linear-gradient(180deg, #000 0%, #111 100%);
+box-shadow: 0 0 10px rgba(0, 255, 153, 0.1);
+}
+
+.profile img {
+border: 3px solid var(--cyber-green);
+box-shadow: 0 0 10px var(--cyber-green);
+}
+
+.profile h1 a {
+color: var(--cyber-green);
+text-shadow: 0 0 8px rgba(0, 255, 153, 0.7);
+}
+
+/* Nav Menu */
+.nav-menu a {
+color: var(--text-light);
+transition: 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu .active {
+color: var(--cyber-green);
+text-shadow: 0 0 8px var(--cyber-green);
+}
+
+/* Hero Section */
+#hero {
+background: radial-gradient(circle at center, #001b1b 0%, #000 80%);
+text-align: center;
+padding: 100px 0;
+}
+
+#hero h1 {
+color: var(--cyber-green);
+font-size: 2.4rem;
+text-shadow: 0 0 15px rgba(0, 255, 153, 0.7);
+}
+
+#hero p {
+color: var(--text-light);
+font-size: 1.1rem;
+}
+
+.typed {
+color: var(--cyber-green);
+text-shadow: 0 0 10px var(--cyber-green);
+}
+
+/* Section Titles */
+.section-title h2 {
+color: var(--cyber-blue);
+font-weight: 600;
+text-transform: uppercase;
+border-bottom: 2px solid var(--cyber-green);
+display: inline-block;
+padding-bottom: 5px;
+margin-bottom: 20px;
+}
+
+/* Cards and Panels */
+.card {
+background-color: var(--cyber-panel);
+border: 1px solid rgba(0, 255, 153, 0.2);
+border-radius: 10px;
+box-shadow: 0 0 15px rgba(0, 255, 153, 0.05);
+}
+
+.card:hover {
+box-shadow: 0 0 25px rgba(0, 255, 153, 0.3);
+transform: scale(1.01);
+transition: 0.4s ease;
+}
+
+/* Progress Bars */
+.progress-bar {
+background: linear-gradient(90deg, var(--cyber-green), var(--cyber-blue));
+box-shadow: 0 0 10px var(--cyber-green);
+}
+
+/* Badges */
+.badge-primary {
+background: var(--cyber-blue);
+box-shadow: 0 0 5px var(--cyber-blue);
+}
+.badge-secondary {
+background: var(--cyber-green);
+color: #000;
+}
+
+/* Carousel */
+.carousel-item img {
+border-radius: 10px;
+border: 2px solid var(--cyber-green);
+box-shadow: 0 0 15px rgba(0, 255, 153, 0.4);
+}
+
+/* Links */
+a {
+color: var(--cyber-green);
+text-decoration: none;
+}
+a:hover {
+color: var(--cyber-blue);
+}
+
+/* Footer & Back to Top */
+.back-to-top {
+background: var(--cyber-green);
+color: #000;
+border-radius: 50%;
+transition: 0.3s;
+}
+.back-to-top:hover {
+background: var(--cyber-blue);
+color: #fff;
+}
+
+/* Animations */
+@keyframes glow {
+0% { box-shadow: 0 0 5px var(--cyber-green); }
+50% { box-shadow: 0 0 20px var(--cyber-green); }
+100% { box-shadow: 0 0 5px var(--cyber-green); }
+}
+
+.profile img:hover {
+animation: glow 2s infinite;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+#hero h1 {
+font-size: 1.8rem;
+}
+#hero p {
+font-size: 0.95rem;
+}
+}
+
